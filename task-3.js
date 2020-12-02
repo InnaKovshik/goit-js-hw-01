@@ -10,7 +10,7 @@ if (userPassword === ADMIN_PASSWORD) {
   message = ACCESS_IS_ALLOWED;
 } else if (userPassword === null) {
   message = CANCELED_BY_USER;
-} else if ((userPassword = '123')) {
+} else if (userPassword !== ADMIN_PASSWORD) {
   message = ACCESS_DENIED;
 } else {
   userPassword = ADMIN_PASSWORD;
